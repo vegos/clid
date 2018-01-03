@@ -1,0 +1,10 @@
+#!/bin/bash
+echo -e '\E[1;35m'
+echo -e "Reverse Lookup for "$1
+tput sgr0
+echo -e '\E[1;31m'
+tput bold
+php /sbin/clid.php $1
+tput sgr0
+echo ""
+echo ""
